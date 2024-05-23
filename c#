@@ -1,0 +1,24 @@
+using System;
+
+public class Aufgabe7{
+
+    public static void Main()
+        
+        {
+        double seite;
+        double umfang;
+        double flaeche;
+        do
+        {
+            Console.WriteLine("Geben Sie die Seite ein:");
+            seite = Convert.ToDouble(Console.ReadLine());
+
+            umfang = 4 * seite;
+            flaeche = seite * seite;
+            
+            Console.WriteLine("Ein Quadrat mit der Seitenlänge " + seite + " hat den Umfang " + umfang + " und die Fläche " + flaeche);
+
+            Console.WriteLine("Wollen Sie nochmal(J/N):");
+        } while (Console.ReadLine().ToUpper() == "J");
+    }
+}
